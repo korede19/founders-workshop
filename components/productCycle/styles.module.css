@@ -1,0 +1,117 @@
+.container {
+  background-color: #0a0a22;
+}
+
+.contain {
+  max-width: 85%;
+  padding: 96px 0px;
+  margin: 0 auto;
+}
+
+.glowBorder {
+  position: relative;
+  padding: 6px;
+  border-radius: 24px;
+  background: linear-gradient(266.85deg, #5865f2 -2.4%, #9be3c1 155.12%);
+}
+
+.innerContainer {
+  background: #0a0b1e;
+  border-radius: 24px;
+  padding: 60px 40px 40px;
+  position: relative;
+}
+
+.titleBadge {
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 12px 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #0a0b1e;
+}
+
+.titleBadge::before {
+  content: "";
+  position: absolute;
+  inset: -1px;
+  background: linear-gradient(266.85deg, #5865f2 -2.4%, #9be3c1 155.12%);
+  z-index: -1;
+  padding: 6px;
+  border-radius: 8px;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.titleBadge h2 {
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 8%;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.contentCard {
+  background: #eef0fe;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+  gap: 24px;
+}
+
+.journeySteps {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.step {
+  padding: 24px 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  text-align: center;
+}
+
+.step:first-child {
+  background: #cbcffb;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+}
+
+.step:last-child {
+  background: #cbcffb;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.step > p {
+  font-weight: 700;
+  font-style: Bold;
+  width: 125px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.stepSvg {
+  position: absolute;
+  top: 45%;
+  right: 13%;
+}
+
+.stepSvgTwo {
+  position: absolute;
+  top: 45%;
+  right: 83%;
+}
