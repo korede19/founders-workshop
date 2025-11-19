@@ -247,13 +247,17 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
   .container {
     max-width: 100%;
   }
 
   .logoImg {
     width: 90px;
+  }
+
+  .otherBtn1 {
+    padding: 16px 20px;
   }
 
   .menuContainer {

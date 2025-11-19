@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./styles.module.css";
 import Feature from "@/svgs/features";
 import { featuresData } from "@/utils/data";
@@ -13,35 +13,11 @@ const Features = () => {
   // Track manual scrolling (mobile only)
   const handleScroll = (e: React.UIEvent<HTMLDivElement>) => {
     const container = e.currentTarget;
-    const cardWidth = container.offsetWidth * 0.85; // same width used in CSS
+    const cardWidth = container.offsetWidth * 1; // Matches CSS
 
     const index = Math.round(container.scrollLeft / cardWidth);
     setActiveIndex(index);
   };
-
-  // Auto scroll on mobile
-  useEffect(() => {
-    const container = sliderRef.current;
-    if (!container) return;
-
-    const isMobile = window.innerWidth <= 768;
-    if (!isMobile) return;
-
-    let index = 0;
-
-    const interval = setInterval(() => {
-      index = (index + 1) % featuresData.length;
-
-      container.scrollTo({
-        left: container.offsetWidth * 0.85 * index,
-        behavior: "smooth",
-      });
-
-      setActiveIndex(index);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   return (
     <div className={styles.container} id="features">
@@ -78,6 +54,8 @@ const Features = () => {
             </div>
           ))}
         </div>
+
+        {/* DOT NAVIGATION */}
         <div className={styles.dotsContainer}>
           {featuresData.map((_, i) => (
             <span
