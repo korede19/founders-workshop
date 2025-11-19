@@ -8,7 +8,7 @@ import Instagram from "@/svgs/instagram";
 
 const Footer = () => {
   return (
-    <div className={styles.footer}>
+    <div className={styles.footer} id="contact">
       <div className={styles.footerContent}>
         <Image src="/assets/logo.png" alt="Logo" width={150} height={50} />
         <div className={styles.links}>

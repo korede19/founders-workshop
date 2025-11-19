@@ -76,3 +76,21 @@
   text-decoration: underline;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 64px 16px;
+    background-size: 900px;
+  }
+
+  .contain {
+    max-width: unset;
+  }
+
+  .heroTexts {
+    width: unset;
+  }
+  .heroTexts > h2 {
+    font-size: 32px;
+  }
+}

@@ -6,7 +6,7 @@ import ConsultantTwo from "@/svgs/consultantTwo";
 
 const HowItWorks = () => {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="how-it-works">
       <div className={styles.contain}>
         <div className={styles.heroTexts}>
           <div className={styles.heroBtn}>

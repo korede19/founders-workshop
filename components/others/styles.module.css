@@ -73,3 +73,28 @@
   border: 0px;
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    padding: 64px 16px;
+  }
+  .contain {
+    max-width: 100%;
+    flex-direction: column-reverse;
+  }
+  .colOne {
+    width: 100%;
+  }
+  .colTwo {
+    width: 100%;
+    align-items: normal;
+    justify-content: center;
+  }
+  .ctaButton {
+    flex-direction: column;
+  }
+  .ctaOne,
+  .ctaTwo {
+    justify-content: center;
+  }
+}

@@ -1,0 +1,47 @@
+.container {
+  background: #07071a;
+  padding: 40px 0;
+  background-image: url("../../public/assets/Group 1171275058.png");
+  background-position: center left;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.marquee {
+  width: 85%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+}
+
+.logo {
+  object-fit: contain;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+.logo:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .track {
+    animation: scroll 20s linear infinite;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+}

@@ -197,21 +197,66 @@
   transform: translateX(4px);
 }
 
+.dotContainer {
+  display: none;
+}
+/* MOBILE ONLY */
 @media (max-width: 768px) {
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .container {
+    padding: 60px 16px;
+  }
+  .contain {
+    max-width: 100%;
+  }
+  .featuresGrid {
+    flex-wrap: nowrap;
+    display: flex;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 0px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
   }
 
-  .feature-card {
-    padding: 32px 24px;
+  .featureDescription {
+    width: unset;
   }
 
-  .feature-title {
-    font-size: 24px;
+  .featuresGrid::-webkit-scrollbar {
+    display: none;
   }
 
-  .feature-description {
-    font-size: 15px;
+  .featureCard {
+    flex: 0 0 100%;
+    scroll-snap-align: center;
+    padding: 40px 16px 205px 16px;
+  }
+
+  /* Navigation Dots */
+  .navDots {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+    gap: 8px;
+  }
+  .dotsContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 8px;
+  }
+
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #17172d;
+    transition: all 0.3s ease;
+  }
+
+  .activeDot {
+    background: #5865f2;
   }
 }

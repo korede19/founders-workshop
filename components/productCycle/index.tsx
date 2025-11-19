@@ -14,21 +14,24 @@ const ProductCycle = () => {
               <TransformTwo />
               <h2>The Product Journey</h2>
             </div>
+
+            {/* desktop side arrows — keep as-is (hidden on mobile via CSS) */}
             <div className={styles.stepSvg}>
               <LongArrow />
             </div>
             <div className={styles.stepSvgTwo}>
               <LongArrow />
             </div>
+
             <div className={styles.contentCard}>
-              {steps.map((item, index) => {
-                return (
-                  <div className={styles.step} key={index}>
+              {steps.map((item, index) => (
+                <React.Fragment key={index}>
+                  <div className={styles.step}>
                     {item.icon}
                     <p>{item.title}</p>
                   </div>
-                );
-              })}
+                </React.Fragment>
+              ))}
             </div>
           </div>
         </div>
