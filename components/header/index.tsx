@@ -89,7 +89,7 @@ const Header = () => {
       </section>
       <div className={styles.otherBtn}>
         <Link
-          href="/for-agencies"
+          href="/"
           className={`${styles.otherBtn1} ${
             pathname === "/" ? styles.active : ""
           }`}
