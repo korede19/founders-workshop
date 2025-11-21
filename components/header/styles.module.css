@@ -33,7 +33,7 @@
   padding: 8px 16px;
   border: 0px;
   border-radius: 200px;
-  color: #fff;
+  color: #a6abe8;
   font-size: 18px;
   font-family: "inter", sans-serif;
   font-weight: 400;
@@ -46,7 +46,7 @@
   padding: 8px 16px;
   border: 0px;
   border-radius: 200px;
-  color: #ffffff;
+  color: #a6abe8;
   font-size: 18px;
   font-family: "inter", sans-serif;
   font-weight: 400;
@@ -181,7 +181,7 @@
     top: 0;
     right: -100%;
     height: 100vh;
-    width: 70%;
+    width: 100%;
     max-width: 400px;
     background-color: #0d0d24;
     flex-direction: column;
@@ -230,6 +230,7 @@
   .otherBtn1 {
     background: #07071a;
     padding: 16px 37px;
+    text-align: center;
     border: 0px;
     color: #a6abe8;
     font-family: "Inter", sans-serif;

@@ -12,7 +12,7 @@ const FeaturesAgency = () => {
         <div className={styles.heroTexts}>
           <div className={styles.heroBtn}>
             <Feature />
-            <p>Empowering founders, one idea at a time</p>
+            <p>Features</p>
           </div>
           <h2>Built to Simplify How You Work.</h2>
           <p>Automate, collaborate, and deliver with speed and clarity.</p>

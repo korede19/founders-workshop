@@ -9,18 +9,21 @@ const LeadingAgencies = () => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.marquee}>
-        <div className={styles.track}>
-          {images.map((item, index) => (
-            <Image
-              key={index}
-              src={item.image}
-              alt="logo"
-              width={195}
-              height={64}
-              className={styles.logo}
-            />
-          ))}
+      <div className={styles.contain}>
+        <h6>Trusted by leading agencies worldwide</h6>
+        <div className={styles.marquee}>
+          <div className={styles.track}>
+            {images.map((item, index) => (
+              <Image
+                key={index}
+                src={item.image}
+                alt="logo"
+                width={195}
+                height={64}
+                className={styles.logo}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div>

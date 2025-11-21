@@ -38,8 +38,8 @@ const FounderHero = () => {
       <div className={styles.imageContainer}>
         <Image
           src="/assets/heroImg.png"
-          width={400}
-          height={400}
+          width={1000}
+          height={1000}
           alt="img"
           priority
           className={styles.heroImg}

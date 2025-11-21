@@ -79,6 +79,7 @@
   display: flex;
   gap: 16px;
   justify-content: center;
+  padding-top: 24px;
 }
 
 .ctaOne {
@@ -139,7 +140,7 @@
 
 @media (max-width: 768px) {
   .container {
-    padding: 24px 16px;
+    padding: 24px 16px 64px 16px;
   }
   .contain {
     max-width: unset;
