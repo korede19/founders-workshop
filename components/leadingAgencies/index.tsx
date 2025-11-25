@@ -18,7 +18,7 @@ const LeadingAgencies = () => {
                 key={index}
                 src={item.image}
                 alt="logo"
-                width={195}
+                width={190}
                 height={64}
                 className={styles.logo}
               />

@@ -45,7 +45,7 @@ export const aboutItems = [
   },
   {
     icon: <Check />,
-    header: "TBuild the right product — from day one",
+    header: "Build the right product — from day one",
     text: "Our AI-driven validation and milestone tracking ensure your product evolves based on data, not assumptions.",
   },
 ];
@@ -219,7 +219,7 @@ export const leadAgencies = [
     image: "/assets/lead5.png",
   },
   {
-    image: "/assets/rebot.png",
+    image: "/assets/rebot2.png",
   },
 ];
 
