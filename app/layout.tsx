@@ -8,8 +8,8 @@ const interSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Founders Workshop",
-  description: "Welcome to founders workshop",
+  title: "Founders Workclave",
+  description: "Welcome to founders workclave",
 };
 
 export default function RootLayout({
